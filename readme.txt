@@ -25,7 +25,7 @@ This plugin requires the Storefront theme and WooCommerce plugin to be installed
 
 = I installed the plugin but cannot see the sharing buttons =
 
-This plugin will only work with the <a href="http://wordpress.org/themes/storefront/">Storefront</a> theme and the <a href="http://wordpress.org/plugins/woocommerce/">WooCommerce</a> plugin.
+This plugin will only work with the [Storefront](http://wordpress.org/themes/storefront/) theme and the [WooCommerce](http://wordpress.org/plugins/woocommerce/) plugin.
 
 == Screenshots ==
 
