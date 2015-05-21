@@ -3,7 +3,7 @@
  * Plugin Name:			Storefront Product Sharing
  * Plugin URI:			http://woothemes.com/products/storefront-product-sharing/
  * Description:			Add attractive social sharing icons for Facebook, Twitter, Pinterest and Email to your product pages.
- * Version:				1.0.0
+ * Version:				1.0.1
  * Author:				WooThemes
  * Author URI:			http://woothemes.com/
  * Requires at least:	4.0.0
@@ -84,7 +84,7 @@ final class Storefront_Product_Sharing {
 		$this->token 			= 'storefront-product-sharing';
 		$this->plugin_url 		= plugin_dir_url( __FILE__ );
 		$this->plugin_path 		= plugin_dir_path( __FILE__ );
-		$this->version 			= '1.0.0';
+		$this->version 			= '1.0.1';
 
 		register_activation_hook( __FILE__, array( $this, 'install' ) );
 
@@ -209,9 +209,9 @@ final class Storefront_Product_Sharing {
 		$product_img	= wp_get_attachment_url( get_post_thumbnail_id() );
 
 		$facebook_url 	= 'https://www.facebook.com/sharer/sharer.php?u=' . $product_url;
-		$twitter_url	= 'http://twitter.com/intent/tweet?status=' . $product_title . '+' . $product_url;
-		$pinterest_url	= 'http://pinterest.com/pin/create/bookmarklet/?media=' . $product_img . '&url=' . $product_url . '&is_video=false&description=' . $product_title;
-		$email_url		= 'mailto:?subject=' . $product_title . '&body=' . $product_url;
+		$twitter_url	= 'http://twitter.com/intent/tweet?status=' . rawurlencode( $product_title ) . '+' . $product_url;
+		$pinterest_url	= 'http://pinterest.com/pin/create/bookmarklet/?media=' . $product_img . '&url=' . $product_url . '&is_video=false&description=' . rawurlencode( $product_title );
+		$email_url		= 'mailto:?subject=' . rawurlencode( $product_title ) . '&body=' . $product_url;
 		?>
 		<div class="storefront-product-sharing">
 			<ul>

@@ -1,4 +1,7 @@
 *** Storefront Product Sharing Changelog ***
 
+2015.05.21 - version 1.0.1
+* Fix - Properly encode spaces when adding the product title to the url.
+
 2015.04.22 - version 1.0.0
 * Initial release
