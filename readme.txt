@@ -1,5 +1,5 @@
 === Storefront Footer Bar ===
-Contributors: jameskoster, woothemes
+Contributors: jameskoster, woothemes, tiagonoronha
 Tags: woocommerce, ecommerce, storefront, social, sharing, seo
 Requires at least: 3.5
 Tested up to: 4.1.2
