@@ -1,4 +1,4 @@
-=== Storefront Footer Bar ===
+=== Storefront Product Sharing ===
 Contributors: jameskoster, woothemes, tiagonoronha
 Tags: woocommerce, ecommerce, storefront, social, sharing, seo
 Requires at least: 3.5
