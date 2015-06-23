@@ -33,10 +33,10 @@ This plugin will only work with the [Storefront](http://wordpress.org/themes/sto
 
 == Changelog ==
 
-= 1.0.2 - 23.06.2015 =
+= 1.0.2 - 06.23.2015 =
 * Fix - Storefront install prompt no longer installs a child theme.
 
-= 1.0.1 - 21.05.2015 =
+= 1.0.1 - 05.21.2015 =
 * Fix - Properly encode spaces when adding the product title to the url.
 
 = 1.0.0 - 04.01.2015 =
