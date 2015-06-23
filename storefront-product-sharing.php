@@ -3,11 +3,11 @@
  * Plugin Name:			Storefront Product Sharing
  * Plugin URI:			http://woothemes.com/products/storefront-product-sharing/
  * Description:			Add attractive social sharing icons for Facebook, Twitter, Pinterest and Email to your product pages.
- * Version:				1.0.1
+ * Version:				1.0.2
  * Author:				WooThemes
  * Author URI:			http://woothemes.com/
  * Requires at least:	4.0.0
- * Tested up to:		4.0.0
+ * Tested up to:		4.2.2
  *
  * Text Domain: storefront-product-sharing
  * Domain Path: /languages/
@@ -84,7 +84,7 @@ final class Storefront_Product_Sharing {
 		$this->token 			= 'storefront-product-sharing';
 		$this->plugin_url 		= plugin_dir_url( __FILE__ );
 		$this->plugin_path 		= plugin_dir_path( __FILE__ );
-		$this->version 			= '1.0.1';
+		$this->version 			= '1.0.2';
 
 		register_activation_hook( __FILE__, array( $this, 'install' ) );
 
@@ -186,8 +186,8 @@ final class Storefront_Product_Sharing {
 	 * @return  void
 	 */
 	public function sps_install_storefront_notice() {
-		echo '<div class="updated">
-				<p>' . __( 'Storefront Product Sharing requires that you use Storefront as your parent theme.', 'storefront-product-sharing' ) . ' <a href="' . esc_url( wp_nonce_url( self_admin_url( 'update.php?action=install-theme&theme=storefront' ), 'install-theme_boutique' ) ) .'">' . __( 'Install Storefront now', 'storefront-product-sharing' ) . '</a></p>
+		echo '<div class="notice is-dismissible updated">
+				<p>' . __( 'Storefront Product Sharing requires that you use Storefront as your parent theme.', 'storefront-product-sharing' ) . ' <a href="' . esc_url( wp_nonce_url( self_admin_url( 'update.php?action=install-theme&theme=storefront' ), 'install-theme_storefront' ) ) .'">' . __( 'Install Storefront now', 'storefront-product-sharing' ) . '</a></p>
 			</div>';
 	}
 
