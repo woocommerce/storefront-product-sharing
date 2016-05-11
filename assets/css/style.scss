@@ -1,10 +1,11 @@
 @import 'susy';
 @import 'bourbon';
-@import '../../../../themes/storefront/sass/utils/variables';
+@import '../../../../themes/storefront/assets/sass/utils/variables';
 
 // Styles for mobile
 .storefront-product-sharing {
 	clear: both;
+
 	ul {
 		margin-left: 0;
 
@@ -51,8 +52,7 @@
 
 	// Styles for desktop
 	.storefront-product-sharing {
-		padding: 2.618em 0;
-		border-top: 1px solid $color_border;
+		padding: 1.618em 0;
 
 		ul {
 			@include clearfix;
@@ -62,6 +62,11 @@
 				width: 25%;
 				float: left;
 				text-align: center;
+				border-right: 1px solid $color_border;
+
+				&:last-child {
+					border-right: 0;
+				}
 
 				a {
 					display: block;
@@ -82,5 +87,4 @@
 			}
 		}
 	}
-
 }

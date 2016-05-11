@@ -22,8 +22,7 @@
 
 @media screen and (min-width: 768px) {
   .storefront-product-sharing {
-    padding: 2.618em 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1); }
+    padding: 1.618em 0; }
     .storefront-product-sharing ul {
       margin: 0; }
       .storefront-product-sharing ul::after {
@@ -33,7 +32,10 @@
       .storefront-product-sharing ul li {
         width: 25%;
         float: left;
-        text-align: center; }
+        text-align: center;
+        border-right: 1px solid rgba(0, 0, 0, 0.05); }
+        .storefront-product-sharing ul li:last-child {
+          border-right: 0; }
         .storefront-product-sharing ul li a {
           display: block; }
           .storefront-product-sharing ul li a:before {
