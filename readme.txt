@@ -33,6 +33,9 @@ This plugin will only work with the [Storefront](http://wordpress.org/themes/sto
 
 == Changelog ==
 
+= 1.0.4 - xx.xx.2016 =
+* Tweak - Open social media links in a new browser tab.
+
 = 1.0.3 - 05.11.2016 =
 * Tweak - Adjusted design to better suit Storefront 2.0.
 

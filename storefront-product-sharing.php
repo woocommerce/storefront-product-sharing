@@ -215,9 +215,9 @@ final class Storefront_Product_Sharing {
 		?>
 		<div class="storefront-product-sharing">
 			<ul>
-				<li class="twitter"><a href="<?php echo esc_url( $twitter_url ); ?>"><?php _e( 'Share on Twitter', 'storefront-product-sharing' ); ?></a></li>
-				<li class="facebook"><a href="<?php echo esc_url( $facebook_url ); ?>"><?php _e( 'Share on Facebook', 'storefront-product-sharing' ); ?></a></li>
-				<li class="pinterest"><a href="<?php echo esc_url( $pinterest_url ); ?>"><?php _e( 'Pin this product', 'storefront-product-sharing' ); ?></a></li>
+				<li class="twitter"><a href="<?php echo esc_url( $twitter_url ); ?>" target="_blank"><?php _e( 'Share on Twitter', 'storefront-product-sharing' ); ?></a></li>
+				<li class="facebook"><a href="<?php echo esc_url( $facebook_url ); ?>" target="_blank"><?php _e( 'Share on Facebook', 'storefront-product-sharing' ); ?></a></li>
+				<li class="pinterest"><a href="<?php echo esc_url( $pinterest_url ); ?>" target="_blank"><?php _e( 'Pin this product', 'storefront-product-sharing' ); ?></a></li>
 				<li class="email"><a href="<?php echo esc_url( $email_url ); ?>"><?php _e( 'Share via Email', 'storefront-product-sharing' ); ?></a></li>
 			</ul>
 		</div>
