@@ -2,8 +2,8 @@
 Contributors: jameskoster, woothemes, tiagonoronha
 Tags: woocommerce, ecommerce, storefront, social, sharing, seo
 Requires at least: 3.5
-Tested up to: 4.2.2
-Stable tag: 1.0.3
+Tested up to: 4.8
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -33,7 +33,7 @@ This plugin will only work with the [Storefront](http://wordpress.org/themes/sto
 
 == Changelog ==
 
-= 1.0.4 - xx.xx.2016 =
+= 1.0.4 - 15.06.2017 =
 * Tweak - Open social media links in a new browser tab.
 
 = 1.0.3 - 05.11.2016 =
