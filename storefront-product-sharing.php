@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name:			Storefront Product Sharing
- * Plugin URI:			http://woothemes.com/products/storefront-product-sharing/
+ * Plugin URI:			https://woocommerce.com/products/storefront-product-sharing/
  * Description:			Add attractive social sharing icons for Facebook, Twitter, Pinterest and Email to your product pages.
  * Version:				1.0.3
  * Author:				WooThemes
- * Author URI:			http://woothemes.com/
+ * Author URI:			https://woocommerce.com/
  * Requires at least:	4.0.0
  * Tested up to:		4.5.2
  *
