@@ -20,15 +20,33 @@
       .storefront-product-sharing ul li.email a:before {
         content: "\f199"; }
 
+.storefront-2-3 .storefront-product-sharing ul li a:before {
+  font-family: "Font Awesome 5 Brands"; }
+
+.storefront-2-3 .storefront-product-sharing ul li.facebook a:before {
+  content: "\f09a"; }
+
+.storefront-2-3 .storefront-product-sharing ul li.twitter a:before {
+  content: "\f099"; }
+
+.storefront-2-3 .storefront-product-sharing ul li.pinterest a:before {
+  content: "\f0d2"; }
+
+.storefront-2-3 .storefront-product-sharing ul li.email a:before {
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  content: "\f0e0"; }
+
 @media screen and (min-width: 768px) {
   .storefront-product-sharing {
     padding: 1.618em 0; }
     .storefront-product-sharing ul {
       margin: 0; }
-      .storefront-product-sharing ul::after {
-        clear: both;
-        content: "";
+      .storefront-product-sharing ul::before, .storefront-product-sharing ul::after {
+        content: '';
         display: table; }
+      .storefront-product-sharing ul::after {
+        clear: both; }
       .storefront-product-sharing ul li {
         width: 25%;
         float: left;
@@ -42,12 +60,6 @@
             display: block;
             margin: 0 auto .007em;
             font-size: 2.618em;
-            -webkit-transition: all, ease, 0.2s;
-            -moz-transition: all, ease, 0.2s;
-            transition: all, ease, 0.2s; }
+            transition: all, ease, .2s; }
           .storefront-product-sharing ul li a:hover:before {
-            -webkit-transform: translateY(-0.236em);
-            -moz-transform: translateY(-0.236em);
-            -ms-transform: translateY(-0.236em);
-            -o-transform: translateY(-0.236em);
             transform: translateY(-0.236em); } }
