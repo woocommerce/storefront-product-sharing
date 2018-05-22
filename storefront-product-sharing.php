@@ -218,7 +218,7 @@ final class Storefront_Product_Sharing {
 		global $storefront_version;
 
 		if ( version_compare( $storefront_version, '2.3.0', '>=' ) ) {
-			wp_enqueue_style( 'font-awesome-free-brands', '//use.fontawesome.com/releases/v5.0.13/css/brands.css' );
+			wp_enqueue_style( 'font-awesome-5-brands', '//use.fontawesome.com/releases/v5.0.13/css/brands.css' );
 		}
 
 		wp_enqueue_style( 'sps-styles', plugins_url( '/assets/css/style.css', __FILE__ ) );
