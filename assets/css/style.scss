@@ -1,6 +1,6 @@
-@import 'susy';
-@import 'bourbon';
-@import '../../../../themes/storefront/assets/sass/utils/variables';
+@import '../../../../themes/storefront/assets/css/sass/utils/mixins';
+@import '../../../../themes/storefront/assets/css/sass/utils/variables';
+@import '../../../../themes/storefront/assets/css/sass/vendors/font-awesome/variables';
 
 // Styles for mobile
 .storefront-product-sharing {
@@ -48,6 +48,44 @@
 	}
 }
 
+.storefront-2-3 {
+	.storefront-product-sharing {
+		ul {
+			li {
+				a:before {
+					font-family: "Font Awesome 5 Brands";
+				}
+
+				&.facebook {
+					a:before {
+						content: fa-content( $fa-var-facebook );
+					}
+				}
+
+				&.twitter {
+					a:before {
+						content: fa-content( $fa-var-twitter );
+					}
+				}
+
+				&.pinterest {
+					a:before {
+						content: fa-content( $fa-var-pinterest );
+					}
+				}
+
+				&.email {
+					a:before {
+						font-weight: 900;
+						font-family: "Font Awesome 5 Free";
+						content: fa-content( $fa-var-envelope );
+					}
+				}
+			}
+		}
+	}
+}
+
 @media screen and (min-width: 768px) {
 
 	// Styles for desktop
@@ -75,12 +113,12 @@
 						display: block;
 						margin: 0 auto .007em;
 						font-size: 2.618em;
-						@include transition(all,ease,.2s);
+						transition: all, ease, .2s;
 					}
 
 					&:hover {
 						&:before {
-							@include transform(translateY(-.236em));
+							transform: translateY(-.236em);
 						}
 					}
 				}

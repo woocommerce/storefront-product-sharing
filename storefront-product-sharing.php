@@ -171,12 +171,30 @@ final class Storefront_Product_Sharing {
 		if ( 'Storefront' == $theme->name || 'storefront' == $theme->template && apply_filters( 'storefront_extension_boilerplate_supported', true ) ) {
 			add_action( 'wp_enqueue_scripts', array( $this, 'sps_styles' ), 999 );
 			add_action( 'woocommerce_after_single_product_summary', array( $this, 'sps_product_sharing' ), 5 );
+			add_filter( 'body_class', array( $this, 'body_classes' ) );
 
 			// Hide the 'More' section in the customizer
 			add_filter( 'storefront_customizer_more', '__return_false' );
 		} else {
 			add_action( 'admin_notices', array( $this, 'sps_install_storefront_notice' ) );
 		}
+	}
+
+	/**
+	 * Adds custom classes to the array of body classes.
+	 *
+	 * @since  1.0.6
+	 * @param  array $classes Classes for the body element.
+	 * @return array
+	 */
+	public function body_classes( $classes ) {
+		global $storefront_version;
+
+		if ( version_compare( $storefront_version, '2.3.0', '>=' ) ) {
+			$classes[] = 'storefront-2-3';
+		}
+
+		return $classes;
 	}
 
 	/**
@@ -197,6 +215,12 @@ final class Storefront_Product_Sharing {
 	 * @return  void
 	 */
 	public function sps_styles() {
+		global $storefront_version;
+
+		if ( version_compare( $storefront_version, '2.3.0', '>=' ) ) {
+			wp_enqueue_style( 'font-awesome-5-brands', '//use.fontawesome.com/releases/v5.0.13/css/brands.css' );
+		}
+
 		wp_enqueue_style( 'sps-styles', plugins_url( '/assets/css/style.css', __FILE__ ) );
 	}
 
