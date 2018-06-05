@@ -2,8 +2,8 @@
 Contributors: jameskoster, woothemes, tiagonoronha
 Tags: woocommerce, ecommerce, storefront, social, sharing, seo
 Requires at least: 3.5
-Tested up to: 4.8
-Stable tag: 1.0.5
+Tested up to: 4.9
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,9 @@ This plugin will only work with the [Storefront](http://wordpress.org/themes/sto
 1. The sharing buttons in action.
 
 == Changelog ==
+
+= 1.0.6 - 04.19.2018 =
+* Fix - Compatibility with Storefront 2.3.
 
 = 1.0.5 - 04.19.2018 =
 * Tweak - Add `noopener noreferrer` to social media links.
