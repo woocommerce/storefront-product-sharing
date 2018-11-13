@@ -1,5 +1,5 @@
 === Storefront Product Sharing ===
-Contributors: jameskoster, woothemes, tiagonoronha
+Contributors: jameskoster, woothemes, tiagonoronha, dev-vip
 Tags: woocommerce, ecommerce, storefront, social, sharing, seo
 Requires at least: 3.5
 Tested up to: 4.9
@@ -7,11 +7,11 @@ Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Add attractive social sharing icons for Facebook, Twitter, Pinterest and Email to your product pages.
+Add attractive social sharing icons for Facebook, Twitter, Pinterest, Google and Email to your product pages for your customers and visitors to easily share your great products.
 
 == Description ==
 
-A simple plugin that adds an attractive sharing component to product pages. Prompt visitors to share your products on Facebook, Twitter, Pinterest or via Email.
+A simple plugin that adds an attractive sharing component to product pages. Prompt visitors to share your products on Facebook, Twitter, Pinterest, Google or via Email.
 
 This plugin requires the Storefront theme and WooCommerce plugin to be installed.
 
@@ -32,6 +32,9 @@ This plugin will only work with the [Storefront](http://wordpress.org/themes/sto
 1. The sharing buttons in action.
 
 == Changelog ==
+
+= 1.0.7 - 12.11.2018 =
+* Tweak - Added share on Google
 
 = 1.0.6 - 04.19.2018 =
 * Fix - Compatibility with Storefront 2.3.
