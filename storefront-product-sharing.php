@@ -3,7 +3,7 @@
  * Plugin Name:         Storefront Product Sharing
  * Plugin URI:          https://woocommerce.com/products/storefront-product-sharing/
  * Description:         Add attractive social sharing icons for Facebook, Twitter, Pinterest and Email to your product pages.
- * Version:             1.0.6
+ * Version:             1.0.7
  * Author:              WooCommerce
  * Author URI:          https://woocommerce.com/
  * Requires at least:   4.0.0
@@ -235,13 +235,15 @@ final class Storefront_Product_Sharing {
 		$facebook_url 	= 'https://www.facebook.com/sharer/sharer.php?u=' . $product_url;
 		$twitter_url	= 'https://twitter.com/intent/tweet?status=' . rawurlencode( $product_title ) . '+' . $product_url;
 		$pinterest_url	= 'https://pinterest.com/pin/create/bookmarklet/?media=' . $product_img . '&url=' . $product_url . '&is_video=false&description=' . rawurlencode( $product_title );
-		$email_url		= 'mailto:?subject=' . rawurlencode( $product_title ) . '&body=' . $product_url;
+		$google_url     = 'https://plus.google.com/share?url=' . $product_url;
+		$email_url	= 'mailto:?subject=' . rawurlencode( $product_title ) . '&body=' . $product_url;
 		?>
 		<div class="storefront-product-sharing">
 			<ul>
 				<li class="twitter"><a href="<?php echo esc_url( $twitter_url ); ?>" target="_blank" rel="noopener noreferrer"><?php _e( 'Share on Twitter', 'storefront-product-sharing' ); ?></a></li>
 				<li class="facebook"><a href="<?php echo esc_url( $facebook_url ); ?>" target="_blank" rel="noopener noreferrer"><?php _e( 'Share on Facebook', 'storefront-product-sharing' ); ?></a></li>
 				<li class="pinterest"><a href="<?php echo esc_url( $pinterest_url ); ?>" target="_blank" rel="noopener noreferrer"><?php _e( 'Pin this product', 'storefront-product-sharing' ); ?></a></li>
+				<li class="google"><a href="<?php echo esc_url( $google_url ); ?>" target="_blank" rel="noopener noreferrer"><?php _e( 'Share On Google', 'storefront-product-sharing' ); ?></a></li>
 				<li class="email"><a href="<?php echo esc_url( $email_url ); ?>"><?php _e( 'Share via Email', 'storefront-product-sharing' ); ?></a></li>
 			</ul>
 		</div>
