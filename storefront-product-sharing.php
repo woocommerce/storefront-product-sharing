@@ -233,7 +233,7 @@ final class Storefront_Product_Sharing {
 		$product_img	= wp_get_attachment_url( get_post_thumbnail_id() );
 
 		$facebook_url 	= 'https://www.facebook.com/sharer/sharer.php?u=' . $product_url;
-		$twitter_url	= 'https://twitter.com/intent/tweet?status=' . rawurlencode( $product_title ) . '+' . $product_url;
+		$twitter_url	= 'https://twitter.com/intent/tweet?text=' . rawurlencode( $product_title ) . '&url=' . $product_url;
 		$pinterest_url	= 'https://pinterest.com/pin/create/bookmarklet/?media=' . $product_img . '&url=' . $product_url . '&is_video=false&description=' . rawurlencode( $product_title );
 		$email_url		= 'mailto:?subject=' . rawurlencode( $product_title ) . '&body=' . $product_url;
 		?>
