@@ -1,8 +1,8 @@
 === Storefront Product Sharing ===
-Contributors: jameskoster, woothemes, tiagonoronha
+Contributors: woocommerce,automattic,jameskoster,woothemes,tiagonoronha
 Tags: woocommerce, ecommerce, storefront, social, sharing, seo
-Requires at least: 3.5
-Tested up to: 4.9
+Requires at least: 4.0
+Tested up to: 5.2
 Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -33,7 +33,7 @@ This plugin will only work with the [Storefront](http://wordpress.org/themes/sto
 
 == Changelog ==
 
-= 1.0.6 - 04.19.2018 =
+= 1.0.6 - 05.06.2018 =
 * Fix - Compatibility with Storefront 2.3.
 
 = 1.0.5 - 04.19.2018 =
