@@ -1,0 +1,62 @@
+{
+  "name": "storefront-product-sharing",
+  "title": "Storefront Product Sharing",
+  "version": "1.0.5",
+  "author": "WooCommerce",
+  "license": "GPL-2.0-or-later",
+  "description": "Add attractive social sharing icons for Facebook, Twitter, Pinterest and Email to your product pages.",
+  "keywords": [
+    "WordPress",
+    "Plugin",
+    "Storefront"
+  ],
+  "homepage": "https://github.com/woocommerce/storefront-product-sharing#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woocommerce/storefront-product-sharing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/woocommerce/storefront-product-sharing/issues"
+  },
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "@babel/core": "^7.10.3",
+    "@wordpress/babel-preset-default": "^4.17.0",
+    "@wordpress/browserslist-config": "^2.6.0",
+    "autoprefixer": "^9.8.3",
+    "babel-cli": "^6.26.0",
+    "babelify": "^10.0.0",
+    "glob": "^7.1.6",
+    "grunt": "^1.1.0",
+    "grunt-browserify": "^5.3.0",
+    "grunt-checktextdomain": "^1.0.1",
+    "grunt-contrib-compress": "^1.6.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-postcss": "^0.9.0",
+    "grunt-sass": "^3.1.0",
+    "grunt-stylelint": "^0.15.0",
+    "grunt-wp-i18n": "^1.0.3",
+    "node-bourbon": "^4.2.8",
+    "node-sass": "^4.14.1",
+    "stylelint": "^13.6.1",
+    "stylelint-a11y": "^1.2.3",
+    "stylelint-config-wordpress": "^17.0.0",
+    "susy": "^2.0.0"
+  },
+  "browserslist": [
+    "extends @wordpress/browserslist-config"
+  ],
+  "scripts": {
+    "build": "grunt",
+    "build:dev": "grunt build",
+    "start": "grunt watch",
+    "watch": "grunt watch",
+    "js": "grunt js",
+    "css": "grunt css",
+    "makepot": "grunt i18n"
+  },
+  "dependencies": {}
+}

@@ -1,3 +1,5 @@
 .sass-cache
-.codekit-cache
 .DS_Store
+node_modules/
+/storefront-product-sharing
+storefront-product-sharing.zip 
