@@ -217,7 +217,7 @@ final class Storefront_Product_Sharing {
 	public function sps_styles() {
 		global $storefront_version;
 
-		if ( version_compare( $storefront_version, '2.3.0', '>=' ) ) {
+		if ( version_compare( $storefront_version, '2.5.6', '<=') ) {
 			wp_enqueue_style( 'font-awesome-5-brands', '//use.fontawesome.com/releases/v5.0.13/css/brands.css' );
 		}
 
