@@ -1,0 +1,9 @@
+{
+	"extends": [
+		"stylelint-config-wordpress"
+	],
+	"plugins": ["stylelint-a11y"],
+	"rules": {
+		"selector-class-pattern": null
+	}
+} 

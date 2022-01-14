@@ -1,0 +1,24 @@
+{
+	"boss": true,
+	"curly": true,
+	"eqeqeq": true,
+	"eqnull": true,
+	"esversion": 7,
+	"expr": true,
+	"immed": true,
+	"noarg": true,
+	"quotmark": "single",
+	"trailingcomma": false,
+	"undef": true,
+	"unused": true,
+
+	"browser": true,
+
+	"globals": {
+		"_": false,
+		"Backbone": false,
+		"carousel_parameters": true,
+		"jQuery": true,
+		"wp": true
+	}
+}
